@@ -1,0 +1,58 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main-group {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#incoming {
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+#outgoing {
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+  width: 100%;
+  height: 80px;
+  font-size: 1em;
+}
+
+#message-submit {
+  background-color: #00558F;
+  color: white;
+  width: 40%;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: background-color .5s;
+}
+
+#message-submit:hover {
+  background-color: #007ACC;
+}
+
+.commands ul {
+  list-style-type: none;
+}
+
+.commands li {
+  margin: 10px;
+  margin-left: -20px;
+}

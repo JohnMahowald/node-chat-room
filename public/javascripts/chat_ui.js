@@ -10,6 +10,7 @@ function updateGroupMessage(message) {
   var $li = $("<li>");
   $li.text(message.currentRoom + " | " + message.user + ": " + message.text);
   $("#group-messages").append($li);
+  $("#incoming").scrollTop(1000);
 }
 
 function postCurrentStatus(response) {

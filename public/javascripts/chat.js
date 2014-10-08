@@ -14,7 +14,6 @@ Chat.prototype.bindMessageHandlers = function () {
   });
   
   this.socket.on('nicknameChangeResult', function(response) {
-    console.log(response.message);
   });
   
   this.socket.on("currentStatus", function(response) {
@@ -27,11 +26,9 @@ Chat.prototype.bindMessageHandlers = function () {
 };
 
 Chat.prototype.processCommand = function (message) {
-  console.log(message);
   message = message.trim();
   var commandRegex = /^(\/\S+)\s(.+)/;
   var matches = commandRegex.exec(message);
-  console.log(matches.length);
   var command = matches[1];
   if (command === "/nick") {
     this.socket.emit ("nicknameChangeRequest", matches[2]);
