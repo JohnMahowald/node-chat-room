@@ -1,6 +1,8 @@
 # Node Chat Room
 
-This is an exercise in making a chat room using node.js.
+Uses Socket.IO to build a connection between client and server.
+
+[Live Demo](http://connect-your-world.herokuapp.com/)
 
 ## Key Features
 
