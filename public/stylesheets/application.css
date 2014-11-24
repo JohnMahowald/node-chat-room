@@ -1,5 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-  font-family: helvetica, arial, sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;	
   margin: 0 auto;
   background-image: url('https://farm6.staticflickr.com/5445/9571177677_bd6938891e_b.jpg');
   height: 100%;
@@ -21,15 +26,21 @@ body {
   margin: 0 auto;
 }
 
+.content-wrapper>h2 {
+	text-align: center;
+}
+
 h1 {
   text-align: center;
   margin-top: 40px;
+	font-weight: 300;
 }
 
 h2 {
   font-size: 1.2em;
   margin-top: 20px;
   margin-bottom: 10px;
+	font-weight: 300;
 }
 
 .main-group {
@@ -48,15 +59,30 @@ h2 {
   background-color: #E6E6E6;
   color: black;
   opacity: .9;
+	border-radius: 10px;
+	padding: 20px;
 }
+
+#group-messages {
+	list-style: none;
+	margin: 0;
+	margin-left: -40px;
+}
+
 
 #outgoing {
   border: 2px solid #4C4C4C;
   border-radius: 3px;
   width: 100%;
-  height: 80px;
+  height: 50px;
   font-size: 1em;
   opacity: .9;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#outgoing:focus {
+	outline: none;
 }
 
 #message-submit {
@@ -83,3 +109,4 @@ h2 {
   margin: 10px;
   margin-left: -20px;
 }
+
